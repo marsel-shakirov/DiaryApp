@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url('/public/fonts/Lato-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato Medium'), local('Lato-Medium'),
+		url('/public/fonts/Lato-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato Black'), local('Lato-Black'),
+		url('/public/fonts/Lato-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}

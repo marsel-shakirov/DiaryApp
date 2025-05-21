@@ -1,0 +1,14 @@
+.homePage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* min-height: 654px; */
+	min-height: calc(100vh - 120px - 58px);
+}
+
+.homePageWrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--gap-lg);
+	max-width: 300px;
+}

@@ -1,0 +1,28 @@
+.button {
+	--size: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 12px;
+	width: var(--size);
+	height: var(--size);
+	border: none;
+	border-radius: var(--border-radius-logo);
+	box-shadow: 0 0 10px 0 rgba(0 0, 0, 0.1);
+	background-color: var(--color-yellow);
+}
+
+.buttonMain {
+	min-width: 300px;
+	min-height: 60px;
+	font-size: var(--font-size-sm);
+	line-height: 1.33;
+	font-weight: var(--font-weighBlack);
+}
+
+@media (any-hover: hover) {
+	.button:hover {
+		opacity: 0.8;
+		transition: opacity var(--animate);
+	}
+}

@@ -1,0 +1,28 @@
+:root {
+	--font-family: 'Lato';
+
+	--color-lightBlack: #1e2022;
+	--color-lightYellow: #fff76a;
+	--color-lightOrange: #ffce89;
+	--color-gray: #747576;
+	--color-yellow: #ffe55e;
+	--color-creamy: #fdfcf3;
+
+	--padding-md: 2.5rem;
+	--padding-sm: 1.25rem;
+
+	--font-size-lg: 2.125rem;
+	--font-size-sm: 1.125rem;
+	--font-size-xsm: 0.875rem;
+
+	--gap-lg: 2.25rem;
+	--gap-md: 1rem;
+
+	--border-radius-logo: 12px;
+
+	--font-weighRegular: 400;
+	--font-weighMedium: 500;
+	--font-weighBlack: 900;
+
+	--animate: 0.3s ease-in-out;
+}
