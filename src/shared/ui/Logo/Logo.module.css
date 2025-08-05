@@ -1,29 +1,29 @@
 .logo {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	column-gap: var(--gap-md);
-	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	color: inherit;
+	font-weight: 900;
 	font-size: var(--font-size-lg);
 	line-height: 1.76;
-	font-weight: var(--font-weighBlack);
-	color: inherit;
+	text-decoration: none;
 }
 
 .logoImage {
 	--size: 60px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	width: var(--size);
-	height: var(--size);
-	border-radius: var(--border-radius-logo);
+	align-items: center;
 	box-shadow: 0 0 10px 0 rgba(0 0, 0, 0.1);
+	border-radius: var(--border-radius-logo);
 	background-image: linear-gradient(
 		143deg,
 		var(--color-lightYellow),
 		var(--color-lightOrange)
 	);
+	width: var(--size);
+	height: var(--size);
 }
 
 .logoDesc {

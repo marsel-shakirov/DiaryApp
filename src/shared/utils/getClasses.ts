@@ -1,6 +1,6 @@
 export const getClasses = (
 	styles: { [key: string]: string },
-	styled: { classes: string[] }
+	styled: string[]
 ): string => {
-	return styled.classes.map(el => styles[el]).join(' ');
-};
+	return styled.map((el) => styles[el]).join(' ')
+}

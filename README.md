@@ -7,6 +7,7 @@ Task 1: Marsel, marsel-shakirov
 - [Контакты](#контакты)
 - [Установка приложения](#установка-приложения)
 - [Мой процесс](#мой-процесс)
+- [Заметки](#Заметки)
 
 ## Контакты
 
@@ -28,3 +29,10 @@ Task 1: Marsel, marsel-shakirov
 - [React](https://reactjs.org/) - JS library
 - [FSD](https://github.com/feature-sliced) - Feature-Sliced Design (FSD) is an architectural methodology
 - [TypeScript](https://www.typescriptlang.org) - TypeScript is JavaScript with syntax for types.
+
+## Заметки
+
+Есть плагины для сортировки импортов и css правил
+
+- [Prettier plugin](https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports) - плагин для сортировки объявлений импорта по указанному порядку регулярного выражения.
+- [CSS Order Prettier Plugin](https://www.npmjs.com/package/prettier-plugin-css-order) - Плагин Prettier для сортировки объявлений CSS, SCSS или Less по именам их свойств.

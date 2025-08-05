@@ -38,8 +38,8 @@ body,
 
 :where(fieldset[class]) {
 	margin-left: 0;
-	padding: 0;
 	border: none;
+	padding: 0;
 }
 
 /**
@@ -144,16 +144,16 @@ label {
 /**
 	 Чиним баг задержки смены цвета при взаимодействии с svg-элементами
 	*/
-svg * {
+/* svg * {
 	transition-property: fill, stroke;
-}
+} */
 
 /**
 	 Приведение рамок таблиц в классический 'collapse' вид
 	*/
 :where(table) {
-	border-collapse: collapse;
 	border-color: currentColor;
+	border-collapse: collapse;
 }
 
 /**

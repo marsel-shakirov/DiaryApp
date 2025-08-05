@@ -1,10 +1,9 @@
 .header {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
 	padding-top: var(--padding-md);
 	padding-bottom: var(--padding-sm);
-	background-color: var(--color-creamy);
 }
 
 .headerImage {

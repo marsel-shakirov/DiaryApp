@@ -1,12 +1,13 @@
-import styles from './Header.module.css';
+import { IconNames } from '@/shared/consts'
+import { Button, Logo } from '@/shared/ui'
 
-import { Button, Logo } from '@/shared/ui';
+import styles from './Header.module.css'
 
-export const Header: React.FC = () => {
+export const Header = () => {
 	return (
 		<header className={`${styles.header} container`}>
 			<Logo />
-			<Button styled={{ classes: ['buttonSmall'] }} />
+			<Button icon={IconNames.edit} aria="Редактировать" />
 		</header>
-	);
-};
+	)
+}

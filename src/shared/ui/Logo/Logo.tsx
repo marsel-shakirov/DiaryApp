@@ -1,14 +1,16 @@
-import styles from './Logo.module.css';
+import { IconNames } from '@/shared/consts'
+import { Icon } from '@/shared/ui'
 
-import IconLogo from '/public/svg/balloon.svg?react';
+import styles from './Logo.module.css'
 
-export const Logo: React.FC = () => {
+export const Logo = () => {
 	return (
 		<a className={styles.logo} href="/">
 			<div className={styles.logoImage}>
-				<IconLogo width="36" height="36" fill="#1E2022" />
+				<Icon name={IconNames.balloon} width="36" height="36" fill="#1E2022" />
+				<span className="visually-hidden">На главную страницу</span>
 			</div>
 			<span className={styles.logoDesc}>DreamTime</span>
 		</a>
-	);
-};
+	)
+}

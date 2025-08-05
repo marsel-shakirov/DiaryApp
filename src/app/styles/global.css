@@ -1,12 +1,16 @@
 body {
-	font-family: var(--font-family);
+	color: var(--color-lightBlack);
+	font-weight: 400;
 	font-size: var(--font-size-xsm);
 	line-height: 1.33;
-	font-weight: var(--font-weighRegular);
-	color: var(--color-lightBlack);
+	font-family: var(--font-family);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	background-color: var(--color-creamy);
+
+	min-width: 1280px;
 }

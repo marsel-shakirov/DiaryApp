@@ -1,1 +1,1 @@
-export { getClasses } from './getClasses.ts';
+export { getClasses } from './getClasses.ts'

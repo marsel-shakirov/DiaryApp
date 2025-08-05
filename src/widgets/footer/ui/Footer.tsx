@@ -1,4 +1,4 @@
-import styles from './Footer.module.css';
+import styles from './Footer.module.css'
 
 export const Footer = () => {
 	return (
@@ -16,5 +16,5 @@ export const Footer = () => {
 				</a>
 			</p>
 		</footer>
-	);
-};
+	)
+}

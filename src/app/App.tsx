@@ -1,8 +1,8 @@
-import { HomePage } from '@/page';
+import { HomePage } from '@/pages'
 
-import { Footer, Header } from '@/widgets';
+import { Footer, Header } from '@/widgets'
 
-import { Content } from '@/shared/ui';
+import { Content } from '@/shared/ui'
 
 export const App = () => {
 	return (
@@ -13,5 +13,5 @@ export const App = () => {
 			</Content>
 			<Footer />
 		</>
-	);
-};
+	)
+}

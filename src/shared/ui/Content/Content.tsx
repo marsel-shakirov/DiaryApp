@@ -1,5 +1,5 @@
-export const Content: React.FC<{ children: React.ReactNode }> = ({
-	children,
-}) => {
-	return <main className="container">{children}</main>;
-};
+import { ContentProps } from './Content.types'
+
+export const Content = ({ children }: ContentProps) => {
+	return <main className="container">{children}</main>
+}
