@@ -1,11 +1,10 @@
-type clsxProps<T = string> = { [key: string]: T }
+type ClsxProps<T = string> = { [key: string]: T }
 
 export const clsx = (
-	styles: clsxProps,
-	...args: clsxProps<unknown>[]
+	styles: ClsxProps,
+	...args: (string | ClsxProps<unknown>)[]
 ): string => {
-	const classes = []
-
+	const classes: string[] = []
 	for (const arg of args) {
 		if (typeof arg === 'string' && arg) {
 			classes.push(arg)
