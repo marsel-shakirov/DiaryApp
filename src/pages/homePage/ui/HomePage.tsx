@@ -10,11 +10,7 @@ export const HomePage = () => {
 			<h1 className="visually-hidden">DiaryApp: Ваш личный трекер жизни</h1>
 			<div className={styles.homePageWrapper}>
 				<img src={EmptyImage} alt="" />
-				<Button
-					icon={IconNames.edit}
-					title="Создать первую запись"
-					styled={['buttonMain']}
-				/>
+				<Button icon={IconNames.edit} title="Создать первую запись" />
 			</div>
 		</section>
 	)
