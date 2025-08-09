@@ -1,21 +1,51 @@
 .button {
 	display: inline-flex;
-	column-gap: var(--gap-sm);
+	column-gap: var(--gap-xs);
 	justify-content: center;
 	align-items: center;
-	box-shadow: 0 0 10px 0 rgba(0 0, 0, 0.1);
+	transition: color 0.2s;
+	box-shadow: var(--box-shadow-base);
 	border: none;
 	border-radius: var(--border-radius-logo);
 	background-color: var(--color-yellow);
-	padding: 18px;
+	padding: var(--padding-xs);
 	font-weight: 900;
 	font-size: var(--font-size-sm);
-	line-height: 1.33;
+}
+
+.selectClose {
+	column-gap: var(--gap-xxs);
+	justify-content: flex-start;
+	outline: transparent;
+	box-shadow: none;
+	background-color: transparent;
+	padding: 4px;
+	color: var(--color-gray-300);
+	font-weight: 500;
+	font-size: var(--font-size-xs);
+	line-height: 1.28;
+}
+
+.formButton {
+	background-color: var(--color-gray-700);
+}
+
+.button:disabled {
+	cursor: not-allowed;
+	color: var(--color-gray-600);
+}
+
+.button:not(:disabled).button:active {
+	color: var(--color-lightBlack);
+}
+
+.button:focus {
+	color: var(--color-lightBlack);
 }
 
 @media (any-hover: hover) {
-	.button:hover {
-		opacity: 0.8;
+	.button:not(:disabled).button:hover {
 		transition: opacity var(--animate);
+		color: var(--color-gray-500);
 	}
 }

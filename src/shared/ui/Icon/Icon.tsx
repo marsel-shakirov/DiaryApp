@@ -1,10 +1,14 @@
+import { clsx } from '@/shared/utils'
+
 import { IconProps } from './Icon.types'
+
+import styles from './Icon.module.css'
 
 export const Icon = ({
 	name,
 	width = '24',
 	height = '24',
-	fill = '#fff',
+	styled = [],
 }: IconProps) => {
 	const isNotFoundName = !name
 
@@ -14,7 +18,11 @@ export const Icon = ({
 	}
 
 	return (
-		<svg width={width} height={height} fill={fill}>
+		<svg
+			className={clsx(styles, name, ...styled)}
+			width={width}
+			height={height}
+		>
 			<use href={`#icon-${name}`}></use>
 		</svg>
 	)

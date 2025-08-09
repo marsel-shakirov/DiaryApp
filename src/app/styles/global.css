@@ -1,7 +1,7 @@
 body {
 	color: var(--color-lightBlack);
 	font-weight: 400;
-	font-size: var(--font-size-xsm);
+	font-size: var(--font-size-sm);
 	line-height: 1.33;
 	font-family: var(--font-family);
 

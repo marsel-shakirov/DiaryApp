@@ -1,4 +1,4 @@
-import { HomePage } from '@/pages'
+import { AddNotePage } from '@/pages'
 
 import { Footer, Header } from '@/widgets'
 
@@ -9,7 +9,8 @@ export const App = () => {
 		<>
 			<Header />
 			<Content>
-				<HomePage />
+				{/* <HomePage /> */}
+				<AddNotePage />
 			</Content>
 			<Footer />
 		</>

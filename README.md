@@ -8,6 +8,7 @@ Task 1: Marsel, marsel-shakirov
 - [Установка приложения](#установка-приложения)
 - [Мой процесс](#мой-процесс)
 - [Заметки](#Заметки)
+- [Плагины](#Плагины)
 
 ## Контакты
 
@@ -32,7 +33,18 @@ Task 1: Marsel, marsel-shakirov
 
 ## Заметки
 
-Есть плагины для сортировки импортов и css правил
+1. простая реализация clsx которая позволяет вам передавать имена классов в виде строк или объектов с условиями, а на выходе получать готовый css module
+
+```jsx
+		className={clsx(styles, 'button', { // обязательный первый параметр
+			active: isActive,
+			disabled: isDisabled, // Класс 'disabled' будет применен, если isDisabled === true
+		})}
+```
+
+## Плагины
+
+Есть плагины Prettier для сортировки импортов и css правил
 
 - [Prettier plugin](https://www.npmjs.com/package/@trivago/prettier-plugin-sort-imports) - плагин для сортировки объявлений импорта по указанному порядку регулярного выражения.
 - [CSS Order Prettier Plugin](https://www.npmjs.com/package/prettier-plugin-css-order) - Плагин Prettier для сортировки объявлений CSS, SCSS или Less по именам их свойств.

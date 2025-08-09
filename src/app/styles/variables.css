@@ -4,22 +4,36 @@
 	--color-lightBlack: #1e2022;
 	--color-lightYellow: #fff76a;
 	--color-lightOrange: #ffce89;
-	--color-gray: #747576;
 	--color-yellow: #ffe55e;
+	--color-yellow-100: #ebd14a;
+	--color-yellow-200: #d2aa1b;
 	--color-creamy: #fdfcf3;
+	--color-white: #ffffff;
+	--color-gray-100: #e0e0e0;
+	--color-gray-200: #cacacb;
+	--color-gray-300: #747576;
+	--color-gray-400: #f1f1f1;
+	--color-gray-500: #494b4c;
+	--color-gray-600: #9fa0a1;
+	--color-gray-700: #e9eaea;
 
 	--padding-md: 40px;
 	--padding-sm: 20px;
+	--padding-xs: 18px;
 
 	--font-size-lg: 34px;
 	--font-size-sm: 18px;
-	--font-size-xsm: 14px;
+	--font-size-xs: 14px;
 
 	--gap-lg: 36px;
 	--gap-md: 16px;
 	--gap-sm: 12px;
+	--gap-xs: 10px;
+	--gap-xxs: 8px;
 
 	--border-radius-logo: 12px;
+
+	--box-shadow-base: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
 	--animate: 0.3s ease-in-out;
 }

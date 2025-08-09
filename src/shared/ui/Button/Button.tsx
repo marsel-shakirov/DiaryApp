@@ -5,10 +5,28 @@ import { ButtonProps } from './Button.types'
 
 import styles from './Button.module.css'
 
-export const Button = ({ icon, title, aria, type = 'button' }: ButtonProps) => {
+export const Button = ({
+	form,
+	icon,
+	styled = [],
+	iconWidth = '24',
+	iconHeight = '24',
+	title,
+	aria,
+	type = 'button',
+	disabled = false,
+	onClick,
+}: ButtonProps) => {
 	return (
-		<button type={type} className={clsx(styles, 'button')} aria-label={aria}>
-			{icon && <Icon name={icon} width="24" height="24" fill="#1E2022" />}
+		<button
+			form={form}
+			type={type}
+			className={clsx(styles, 'button', ...styled)}
+			aria-label={aria}
+			disabled={disabled}
+			onClick={onClick}
+		>
+			{icon && <Icon name={icon} width={iconWidth} height={iconHeight} />}
 			{title && <span className={styles.buttonTitle}>{title}</span>}
 		</button>
 	)
