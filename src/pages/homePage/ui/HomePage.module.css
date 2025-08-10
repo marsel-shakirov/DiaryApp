@@ -7,7 +7,7 @@
 
 .homePageWrapper {
 	display: flex;
-	row-gap: var(--gap-lg);
+	row-gap: var(--gap-xxlg);
 	flex-direction: column;
 	max-width: 300px;
 }

@@ -1,0 +1,30 @@
+.imageLabel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--box-shadow-base);
+	border: 0;
+	border-radius: var(--border-radius-base);
+	max-height: 240px;
+	color: var(--color-primary-600);
+}
+
+.noteImage {
+	opacity: 0.4;
+	border-radius: var(--border-radius-base);
+	width: 100%;
+	max-height: 240px;
+	object-fit: cover;
+}
+
+.image {
+	position: absolute;
+}
+
+.imageLabel:hover {
+	color: var(--color-primary-300);
+}
+
+.imageLabel:focus-within {
+	color: var(--color-primary-500);
+}

@@ -1,5 +1,10 @@
 type ValueOf<T> = T[keyof T]
 
+export const PAGES = {
+	Home: './',
+	Note: '/note',
+} as const
+
 export const IconNames = {
 	Balloon: 'balloon',
 	Edit: 'edit',
@@ -11,3 +16,5 @@ export const IconNames = {
 } as const
 
 export type IconName = ValueOf<typeof IconNames>
+
+export type PagesName = ValueOf<typeof PAGES>

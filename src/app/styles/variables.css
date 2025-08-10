@@ -2,36 +2,46 @@
 	--font-family: 'Lato', sans-serif;
 
 	--color-lightBlack: #1e2022;
-	--color-lightYellow: #fff76a;
-	--color-lightOrange: #ffce89;
+
 	--color-yellow: #ffe55e;
 	--color-yellow-100: #ebd14a;
 	--color-yellow-200: #d2aa1b;
+	--color-yellow-300: #fff76a;
+	--color-yellow-400: #ffce89;
 	--color-creamy: #fdfcf3;
 	--color-white: #ffffff;
-	--color-gray-100: #e0e0e0;
-	--color-gray-200: #cacacb;
-	--color-gray-300: #747576;
-	--color-gray-400: #f1f1f1;
-	--color-gray-500: #494b4c;
-	--color-gray-600: #9fa0a1;
-	--color-gray-700: #e9eaea;
+	--color-primary-100: #e0e0e0;
+	--color-primary-200: #cacacb;
+	--color-primary-300: #747576;
+	--color-primary-400: #f1f1f1;
+	--color-primary-500: #494b4c;
+	--color-primary-600: #9fa0a1;
+	--color-primary-700: #e9eaea;
 
 	--padding-md: 40px;
 	--padding-sm: 20px;
-	--padding-xs: 18px;
+	--padding-xsm: 18px;
+	--padding-xs: 12px;
+	--padding-xxs: 10px;
 
 	--font-size-lg: 34px;
 	--font-size-sm: 18px;
 	--font-size-xs: 14px;
 
-	--gap-lg: 36px;
+	--gap-base: 40px;
+	--gap-xxlg: 36px;
+	--gap-xlg: 20px;
+	--gap-lg: 18px;
 	--gap-md: 16px;
 	--gap-sm: 12px;
 	--gap-xs: 10px;
 	--gap-xxs: 8px;
 
-	--border-radius-logo: 12px;
+	--min-height-content: calc(100vh - 120px - 77px);
+
+	--border-radius-base: 12px;
+
+	--z-idex-selector: 100;
 
 	--box-shadow-base: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 

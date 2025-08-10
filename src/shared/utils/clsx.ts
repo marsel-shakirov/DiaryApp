@@ -1,9 +1,7 @@
-type ClsxProps<T = string> = { [key: string]: T }
+// type ClsxProps<T = string> = { [key: string]: T }
+import { ClsxProps, Styles } from '../types/Clsx.types'
 
-export const clsx = (
-	styles: ClsxProps,
-	...args: (string | ClsxProps<unknown>)[]
-): string => {
+export const clsx = (styles: Styles, ...args: ClsxProps): string => {
 	const classes: string[] = []
 	for (const arg of args) {
 		if (typeof arg === 'string' && arg) {

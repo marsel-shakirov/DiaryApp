@@ -1,0 +1,76 @@
+.calendarLabel {
+	position: relative;
+	flex-grow: 1;
+}
+
+.calendar {
+	display: block;
+	outline: transparent;
+	box-shadow: var(--box-shadow-base);
+	border: 1px solid transparent;
+	border-radius: var(--border-radius-base);
+	padding: var(--padding-xxs) 14px;
+	width: 100%;
+	height: 60px;
+}
+
+.calendar:hover {
+	border: 1px solid var(--color-primary-100);
+}
+
+.calendar:focus {
+	border: 1px solid var(--color-primary-200);
+}
+
+.calendar::placeholder {
+	opacity: 0.8;
+	color: var(--color-primary-300);
+}
+
+.buttonCalendar {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	outline: transparent;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	width: 24px;
+	height: 24px;
+	color: var(--color-primary-600);
+}
+
+.buttonCalendar:focus {
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-name: calendar-opacity;
+}
+
+@keyframes calendar-opacity {
+	from {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 0.7;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.buttonCalendar:focus {
+	opacity: 0.8;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+input[type='date']::-moz-calendar-picker-indicator {
+	display: none;
+}
+
+input[type='date']::-ms-expand {
+	display: none;
+}

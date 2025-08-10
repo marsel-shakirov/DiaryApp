@@ -6,9 +6,9 @@
 	transition: color 0.2s;
 	box-shadow: var(--box-shadow-base);
 	border: none;
-	border-radius: var(--border-radius-logo);
+	border-radius: var(--border-radius-base);
 	background-color: var(--color-yellow);
-	padding: var(--padding-xs);
+	padding: var(--padding-xsm);
 	font-weight: 900;
 	font-size: var(--font-size-sm);
 }
@@ -20,19 +20,19 @@
 	box-shadow: none;
 	background-color: transparent;
 	padding: 4px;
-	color: var(--color-gray-300);
+	color: var(--color-primary-300);
 	font-weight: 500;
 	font-size: var(--font-size-xs);
 	line-height: 1.28;
 }
 
 .formButton {
-	background-color: var(--color-gray-700);
+	background-color: var(--color-primary-700);
 }
 
 .button:disabled {
 	cursor: not-allowed;
-	color: var(--color-gray-600);
+	color: var(--color-primary-600);
 }
 
 .button:not(:disabled).button:active {
@@ -46,6 +46,6 @@
 @media (any-hover: hover) {
 	.button:not(:disabled).button:hover {
 		transition: opacity var(--animate);
-		color: var(--color-gray-500);
+		color: var(--color-primary-500);
 	}
 }
