@@ -12,7 +12,7 @@ export const Input = ({
 	styled = [],
 }: InputProps) => {
 	return (
-		<label className={styles.inputLabel}>
+		<label className={clsx(styles, 'inputLabel')}>
 			<span className="visually-hidden">{accessibility}</span>
 			<input
 				className={clsx(styles, ...styled)}

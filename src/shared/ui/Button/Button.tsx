@@ -27,7 +27,7 @@ export const Button = ({
 			onClick={onClick}
 		>
 			{icon && <Icon name={icon} width={iconWidth} height={iconHeight} />}
-			{title && <span className={styles.buttonTitle}>{title}</span>}
+			{title && <span className={clsx(styles, 'buttonTitle')}>{title}</span>}
 		</button>
 	)
 }

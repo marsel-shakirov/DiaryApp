@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import emojiData from '@/shared/api/mock/emojiData.json'
 import { IconNames } from '@/shared/constants'
@@ -8,11 +8,11 @@ import { clsx } from '@/shared/utils'
 import styles from './Selector.module.css'
 
 export const Selector = () => {
-	const [isSelected, setIsSelected] = React.useState(false)
-	const [isShowPanel, setIsShowPanel] = React.useState(false)
-	const [selectorValue, setSelectorValue] = React.useState('😊')
+	const [isSelected, setIsSelected] = useState(false)
+	const [isShowPanel, setIsShowPanel] = useState(false)
+	const [selectorValue, setSelectorValue] = useState('😊')
 
-	const panelRef = React.useRef<HTMLDialogElement>(null)
+	const panelRef = useRef<HTMLDialogElement>(null)
 
 	const handleEmojiSelect = (event: React.MouseEvent<HTMLLIElement>) => {
 		if (event.target && event.target instanceof HTMLElement) {
@@ -47,7 +47,7 @@ export const Selector = () => {
 		setIsSelected(false)
 	}
 
-	React.useEffect(() => {
+	useEffect(() => {
 		function handlePanelClose(event: KeyboardEvent) {
 			if (isShowPanel && event.code === 'Escape' && panelRef.current) {
 				panelRef.current.close()
@@ -60,9 +60,9 @@ export const Selector = () => {
 	}, [isShowPanel])
 
 	return (
-		<label className={styles.selectorLabel}>
+		<label className={clsx(styles, 'selectorLabel')}>
 			<input
-				className={styles.selectorInput}
+				className={clsx(styles, 'selectorInput')}
 				type="text"
 				id="emoji"
 				name="emoji"
@@ -77,7 +77,7 @@ export const Selector = () => {
 			>
 				<span className="visually-hidden">Добавить настроение</span>
 				{isSelected ? (
-					<span className={styles.emojiSelected}>{selectorValue}</span>
+					<span className={clsx(styles, 'emojiSelected')}>{selectorValue}</span>
 				) : (
 					<Icon name={IconNames.Emoji} width="24" height="24" />
 				)}
@@ -89,13 +89,13 @@ export const Selector = () => {
 					styled={[{ rotate: isShowPanel }]}
 				/>
 			</button>
-			<dialog ref={panelRef} id="panel" className={styles.panel}>
-				<ul className={styles.panelList}>
+			<dialog ref={panelRef} id="panel" className={clsx(styles, 'panel')}>
+				<ul className={clsx(styles, 'panelList')}>
 					{emojiData.emoticons.map((emoji, index) => (
 						<li
 							key={`${index}_${emoji}`}
 							tabIndex={0}
-							className={styles.panelItem}
+							className={clsx(styles, 'panelItem')}
 							onClick={handleEmojiSelect}
 							onKeyDown={handleKeyPress}
 						>

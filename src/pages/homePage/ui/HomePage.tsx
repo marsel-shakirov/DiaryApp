@@ -2,6 +2,7 @@ import EmptyImage from '@/shared/assets/images/svg/empty.svg'
 import { IconNames, PAGES } from '@/shared/constants'
 import { usePageContext } from '@/shared/hooks'
 import { Button } from '@/shared/ui'
+import { clsx } from '@/shared/utils'
 
 import styles from './HomePage.module.css'
 
@@ -12,9 +13,9 @@ export const HomePage = () => {
 		<>
 			<title>DiaryApp | Главная страница</title>
 
-			<section className={styles.homePage}>
+			<section className={clsx(styles, 'homePage')}>
 				<h1 className="visually-hidden">DiaryApp: Ваш личный трекер жизни</h1>
-				<div className={styles.homePageWrapper}>
+				<div className={clsx(styles, 'homePageWrapper')}>
 					<img src={EmptyImage} alt="" />
 					<Button
 						icon={IconNames.Edit}

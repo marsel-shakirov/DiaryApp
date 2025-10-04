@@ -2,7 +2,7 @@
 
 Это решение задачи на [спринт DiaryApp на Preax](https://preax.ru 'Preax'). Платформа Preax помогает улучшить навыки программирования путем создания реалистичных проектов.
 
-Task 1: Marsel, marsel-shakirov
+Task 3: Marsel, marsel-shakirov
 
 - [Контакты](#контакты)
 - [Установка приложения](#установка-приложения)
@@ -41,6 +41,9 @@ Task 1: Marsel, marsel-shakirov
 			disabled: isDisabled, // Класс 'disabled' будет применен, если isDisabled === true
 		})}
 ```
+
+2. <title>.....</title> - Встроенный компонент браузера <title> позволяет указать заголовок документа. 
+   [React-title](https://react.dev/reference/react-dom/components/title)
 
 ## Плагины
 

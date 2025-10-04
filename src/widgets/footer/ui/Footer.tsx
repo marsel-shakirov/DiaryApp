@@ -1,15 +1,17 @@
+import { clsx } from '@/shared/utils'
+
 import styles from './Footer.module.css'
 
 export const Footer = () => {
 	return (
-		<footer className={`${styles.footer} container`}>
-			<p className={styles.preax}>
+		<footer className={`${clsx(styles, 'footer')} container`}>
+			<p className={clsx(styles, 'preax')}>
 				Проект выполнен в рамках стажировки&ensp;
 				<a
 					href="https://preax.ru"
 					target="_blank"
 					rel="noopener noreferrer"
-					className={styles.preaxLink}
+					className={clsx(styles, 'preaxLink')}
 					lang="en"
 				>
 					preax

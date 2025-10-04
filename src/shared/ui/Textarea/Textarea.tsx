@@ -11,7 +11,7 @@ export const Textarea = ({
 	styled = [],
 }: TextareaProps) => {
 	return (
-		<label className={styles.textareaLabel}>
+		<label className={clsx(styles, 'textareaLabel')}>
 			<span className="visually-hidden">{accessibility}</span>
 			<textarea
 				className={clsx(styles, ...styled)}

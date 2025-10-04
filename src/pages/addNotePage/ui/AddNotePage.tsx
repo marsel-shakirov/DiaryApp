@@ -1,21 +1,22 @@
-import React from 'react'
+import { useId } from 'react'
 
 import { IconNames } from '@/shared/constants'
 import { Button, Calendar, Image, Input, Selector, Textarea } from '@/shared/ui'
+import { clsx } from '@/shared/utils'
 
 import styles from './addNotePage.module.css'
 
 export const AddNotePage = () => {
-	const formId = React.useId()
+	const formId = useId()
 
 	return (
 		<>
 			<title>DiaryApp | Добавить заметку</title>
 
-			<section className={styles.addNotePage}>
+			<section className={clsx(styles, 'addNotePage')}>
 				<h1 className="visually-hidden">Добавить заметку</h1>
-				<form id={formId} className={styles.form} action="">
-					<div className={`${styles.formInner} ${styles.formDescription}`}>
+				<form id={formId} className={clsx(styles, 'form')} action="">
+					<div className={clsx(styles, 'formInner', 'formDescription')}>
 						<Input
 							name="heading"
 							placeholder="Заголовок"
@@ -29,8 +30,8 @@ export const AddNotePage = () => {
 							styled={['description']}
 						/>
 					</div>
-					<div className={`${styles.formInner} ${styles.formFilter}`}>
-						<div className={styles.filter}>
+					<div className={clsx(styles, 'formInner', 'formFilter')}>
+						<div className={clsx(styles, 'filter')}>
 							<Calendar />
 							<Selector />
 						</div>
@@ -43,7 +44,7 @@ export const AddNotePage = () => {
 						/>
 					</div>
 				</form>
-				<div className={styles.formButtons}>
+				<div className={clsx(styles, 'formButtons')}>
 					<Button
 						form={formId}
 						type="submit"
