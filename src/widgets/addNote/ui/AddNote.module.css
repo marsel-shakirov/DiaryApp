@@ -1,4 +1,4 @@
-.addNotePage {
+.addNote {
 	display: flex;
 	row-gap: var(--gap-base);
 	flex-direction: column;
@@ -6,6 +6,7 @@
 	padding-top: var(--padding-sm);
 	min-height: var(--min-height-content);
 }
+
 .form {
 	display: flex;
 	column-gap: var(--gap-base);
