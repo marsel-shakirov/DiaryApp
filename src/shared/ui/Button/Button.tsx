@@ -6,7 +6,6 @@ import { ButtonProps } from './Button.types'
 import styles from './Button.module.css'
 
 export const Button = ({
-	form,
 	icon,
 	styled = [],
 	iconWidth = '24',
@@ -19,7 +18,6 @@ export const Button = ({
 }: ButtonProps) => {
 	return (
 		<button
-			form={form}
 			type={type}
 			className={clsx(styles, 'button', ...styled)}
 			aria-label={aria}

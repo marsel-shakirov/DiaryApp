@@ -1,6 +1,5 @@
-import { JSX } from 'react'
+import { ReactNode } from 'react'
 
 export interface ContentProps extends React.HTMLAttributes<HTMLElement> {
-	HomePage: JSX.ElementType
-	AddNotePage: JSX.ElementType
+	children: ReactNode
 }

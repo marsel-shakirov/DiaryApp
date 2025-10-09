@@ -1,8 +1,8 @@
 type ValueOf<T> = T[keyof T]
 
 export const PAGES = {
-	Home: './',
-	Note: '/note',
+	Home: '/',
+	Note: '/create',
 } as const
 
 export const IconNames = {
