@@ -9,8 +9,7 @@ export const PageProvider = ({ children }: { children: React.ReactNode }) => {
 	const navigate = (url: PagesName) => {
 		setCurrentPage(url)
 		window.history.pushState({}, '', `${url}`)
-		const navEvent = new PopStateEvent('popstate')
-		window.dispatchEvent(navEvent)
+		window.dispatchEvent(new PopStateEvent('popstate'))
 	}
 
 	return <PageContext value={{ currentPage, navigate }}>{children}</PageContext>

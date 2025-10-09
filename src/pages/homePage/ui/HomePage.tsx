@@ -20,7 +20,7 @@ export const HomePage = () => {
 					<Button
 						icon={IconNames.Edit}
 						title="Создать первую запись"
-						onClick={() => navigate(PAGES.Note)}
+						onClick={() => navigate(PAGES.Create)}
 					/>
 				</div>
 			</section>

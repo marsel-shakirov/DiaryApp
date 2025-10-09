@@ -17,7 +17,7 @@ export const Header = () => {
 				<Button
 					icon={IconNames.Edit}
 					aria="Создать первую запись"
-					onClick={() => navigate(PAGES.Note)}
+					onClick={() => navigate(PAGES.Create)}
 				/>
 			)}
 		</header>

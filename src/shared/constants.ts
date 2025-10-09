@@ -2,7 +2,7 @@ type ValueOf<T> = T[keyof T]
 
 export const PAGES = {
 	Home: '/',
-	Note: '/create',
+	Create: '/create',
 } as const
 
 export const IconNames = {

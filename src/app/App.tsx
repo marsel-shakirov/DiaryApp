@@ -1,5 +1,5 @@
 import { PageProvider } from './provider'
-import { Route } from './route'
+import { Route } from './router'
 
 import { AddNotePage, HomePage } from '@/pages'
 
@@ -14,12 +14,8 @@ export const App = () => {
 			<PageProvider>
 				<Header />
 				<Content>
-					<Route path={PAGES.Home}>
-						<HomePage />
-					</Route>
-					<Route path={PAGES.Note}>
-						<AddNotePage />
-					</Route>
+					<Route path={PAGES.Home} element={<HomePage />} />
+					<Route path={PAGES.Create} element={<AddNotePage />} />
 				</Content>
 				<Footer />
 			</PageProvider>
