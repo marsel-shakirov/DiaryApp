@@ -8,6 +8,8 @@ export const PageProvider = ({ children }: { children: React.ReactNode }) => {
 
 	const navigate = (url: PagesName) => {
 		setCurrentPage(url)
+		console.log(window.location.pathname)
+		window.history.pushState({}, '', `${url}`)
 	}
 
 	return <PageContext value={{ currentPage, navigate }}>{children}</PageContext>
