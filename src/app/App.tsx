@@ -15,7 +15,7 @@ export const App = () => {
 				<Header />
 				<Content>
 					<Route path={PAGES.Home} element={<HomePage />} />
-					<Route path={PAGES.Create} element={<AddNotePage />} />
+					<Route path={PAGES.Notes} element={<AddNotePage />} />
 				</Content>
 				<Footer />
 			</PageProvider>
