@@ -1,1 +1,1 @@
-export { PageProvider } from './PageProvider'
+export { BrowserRouter } from './BrowserRouter'

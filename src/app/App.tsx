@@ -1,4 +1,4 @@
-import { PageProvider } from './provider'
+import { BrowserRouter } from './provider'
 import { Route } from './router'
 
 import { AddNotePage, HomePage } from '@/pages'
@@ -11,14 +11,14 @@ import { Content } from '@/shared/ui'
 export const App = () => {
 	return (
 		<>
-			<PageProvider>
+			<BrowserRouter>
 				<Header />
 				<Content>
 					<Route path={PAGES.Home} element={<HomePage />} />
 					<Route path={PAGES.Notes} element={<AddNotePage />} />
 				</Content>
 				<Footer />
-			</PageProvider>
+			</BrowserRouter>
 		</>
 	)
 }

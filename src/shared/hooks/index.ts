@@ -1,1 +1,1 @@
-export { usePageContext } from './context-hooks/usePageContext'
+export { useRouterContext } from './context-hooks/useRouterContext'

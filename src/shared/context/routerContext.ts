@@ -3,8 +3,9 @@ import { createContext } from 'react'
 import { PagesName } from '@/shared/constants'
 
 export interface ContextProps {
-	currentPage: string
+	currentPath: string
+	setCurrentPath: (path: string) => void
 	navigate: (url: PagesName) => void
 }
 
-export const PageContext = createContext<ContextProps | null>(null)
+export const RouterContext = createContext<ContextProps | null>(null)

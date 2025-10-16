@@ -1,8 +1,10 @@
 import type { RouteProps } from './Route.type'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+
+import { useRouterContext } from '@/shared/hooks'
 
 export const Route = ({ path, element }: RouteProps) => {
-	const [currentPath, setCurrentPath] = useState(window.location.pathname)
+	const { currentPath, setCurrentPath } = useRouterContext()
 
 	useEffect(() => {
 		const onPopState = () => {
@@ -14,7 +16,7 @@ export const Route = ({ path, element }: RouteProps) => {
 		return () => {
 			window.removeEventListener('popstate', onPopState)
 		}
-	}, [])
+	}, [currentPath, setCurrentPath])
 
 	return currentPath === path ? element : null
 }
